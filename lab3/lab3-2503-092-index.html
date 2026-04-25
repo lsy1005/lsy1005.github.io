@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字展销平台-春韵</title>
+    <link rel="stylesheet" href="./css/lab3-2503-092-index.css">
+</head>
+<body>
+    <div id="content">
+        <div class="header">
+            <div class="logo-area">
+                <div class="logo">
+                    <img src="./img/Screenshot_2026_0418_144520.png" alt="logo">
+                </div>
+                <div class="site-name">数字展销平台</div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索你想要的商品" class="search-input">
+                <div class="search-btn">
+                    <img src="./img/search.png" alt="搜索">
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="">登录/注册</a>
+                <a href="#">用户中心</a>
+                <a href="#">消息</a>
+                <a href="#">关于我们</a>
+            </div>
+        </div>
+        <div id="login">
+            <div class="title">
+                <h1>登录</h1>
+            </div>
+            <div class="hr"></div>
+            <div class="touxiang">
+                <img src="./img/user.JPG" alt="">
+            </div>
+            <div class="text">
+                <div class="user">
+                    <input type="text" placeholder="请输入帐号">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="sm">
+                <p>登录即同意</p><a href="">用户协议、隐私政策</a>
+            </div>
+            <div class="btn">
+                <button>登录</button>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="">立即注册</a></li>
+                    <li><a href="">忘记密码</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="register" style="display: none;">
+            <div class="title">
+                <h1>注册</h1>
+            </div>
+            <div class="hr"></div>
+            <div class="touxiang">
+                <img src="./img/user.JPG" alt="">
+            </div>
+            <div class="text">
+                <div class="user">
+                    <input type="text" id="reg-username" placeholder="请输入用户名">
+                </div>
+                <div class="password">
+                    <input type="password" id="reg-password" placeholder="请输入密码">
+                </div>
+                <div class="password">
+                    <input type="password" id="reg-confirm" placeholder="确认密码">
+                </div>
+            </div>
+            <div class="btn">
+                <button id="register-btn">注册</button>
+            </div>
+            <div class="register">
+                <ul>
+                    <li><a href="#" id="to-login">返回登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="center">
+            <div class="left">
+                <ul>
+                    <li>文学读物</li>
+                    <li>少儿读物</li>
+                    <li>历史地理</li>
+                    <li>社科心理</li>
+                    <li>科普科技</li>
+                    <li>经管励志</li>
+                    <li>艺术文化</li>
+                </ul>
+            </div>
+            <div class="main">
+                <img src="./img/tushu1.JPG" alt="图书banner">
+            </div>
+            <div class="right">
+                <div class="re">
+                    周末书香秒杀！每天两场，爆款图书9.9元起抢，拼手速的时候到了～
+                </div>
+                <div class="re">
+                    限时48小时！图书清仓特惠，低至3折，数量有限，先到先得，错过再等一年！
+                </div>
+                <div class="re">
+                    全场图书8折起，会员尊享折上折，消费满300元赠定制书签+经典名著一本，开启你的阅读之旅～
+                </div>
+            </div>
+        </div>
+        <div class="zri">
+            <div class="sale">
+                <a href="#tuijian">热门推荐</a>
+            </div>
+            <div class="sale">
+                <a href="#shangshi">新书上市</a>
+            </div>
+            <div class="sale">
+                <a href="#">用户中心</a>
+            </div>
+            <div class="top">
+                <a href="#">回到顶部</a>
+            </div>
+        </div>
+        <div class="remen">
+            <h1><a id="tuijian">热门推荐</a></h1>
+            <div class="book-list">
+                <div class="img">
+                    <div class="mame">《哈利波特》</div>
+                    <img src="./img/halibote.jpg" alt="哈利波特">
+                </div>
+                <div class="img">
+                    <div class="mame">《红高粱》</div>
+                    <img src="./img/honggangliang.jpg" alt="红高粱">
+                </div>
+                <div class="img">
+                    <div class="mame">《红楼梦》</div>
+                    <img src="./img/hongloumeng.jpeg" alt="红楼梦">
+                </div>
+                <div class="img">
+                    <div class="mame">《活着》</div>
+                    <img src="./img/huozhe.jpg" alt="活着">
+                </div>
+                <div class="img">
+                    <div class="mame">《狂人日记》</div>
+                    <img src="./img/kuangrenriji.jpg" alt="狂人日记">
+                </div>
+            </div>
+        </div>
+        <div class="newbook">
+            <h1><a id="shangshi">新书上市</a></h1>
+            <table>
+                <tr>
+                    <th>书名</th>
+                    <th>作者</th>
+                    <th>价格</th>
+                </tr>
+                <tr>
+                    <td><img src="./img/sanguoyanyi.jpg" alt="三国演义"></td>
+                    <td>罗贯中</td>
+                    <td>￥60</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/shiji.jpeg" alt="史记"></td>
+                    <td>司马迁</td>
+                    <td>￥55</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/xiyouji.jpeg" alt="西游记"></td>
+                    <td>吴承恩</td>
+                    <td>￥50</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        const loginBox = document.getElementById('login');
+        const registerBox = document.getElementById('register');
+        const loginRegisterLink = document.querySelector('.nav-links a:first-child'); // "登录/注册"链接
+        const toRegisterLink = document.querySelector('#login .register ul li a'); // 登录框中的"立即注册"
+        const toLoginLink = document.getElementById('to-login');
+        const loginBtn = document.querySelector('#login .btn button');
+        const registerBtn = document.getElementById('register-btn');
+        const loginUsername = document.querySelector('#login .user input');
+        const loginPassword = document.querySelector('#login .password input');
+        const regUsername = document.getElementById('reg-username');
+        const regPassword = document.getElementById('reg-password');
+        const regConfirm = document.getElementById('reg-confirm');
+        if (!localStorage.getItem('users')) {
+            localStorage.setItem('users', JSON.stringify([]));
+        }
+        function showLogin() {
+            loginBox.style.display = 'block';
+            registerBox.style.display = 'none';
+        }
+        function showRegister() {
+            loginBox.style.display = 'none';
+            registerBox.style.display = 'block';
+        }
+        loginRegisterLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            showLogin();
+        });
+        if (toRegisterLink) {
+            toRegisterLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                showRegister();
+            });
+        }
+        if (toLoginLink) {
+            toLoginLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                showLogin();
+            });
+        }
+        document.addEventListener('click', function(e) {
+            if (!loginBox.contains(e.target) && !registerBox.contains(e.target) && 
+                e.target !== loginRegisterLink && !loginRegisterLink.contains(e.target)) {
+                loginBox.style.display = 'none';
+                registerBox.style.display = 'none';
+            }
+        });
+        registerBtn.addEventListener('click', function() {
+            const username = regUsername.value.trim();
+            const password = regPassword.value.trim();
+            const confirm = regConfirm.value.trim();
+            
+            if (!username || !password || !confirm) {
+                alert('请填写完整信息');
+                return;
+            }
+            
+            if (password !== confirm) {
+                alert('两次输入的密码不一致');
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('密码长度至少6位');
+                return;
+            }
+            let users = JSON.parse(localStorage.getItem('users'));
+            const userExists = users.some(user => user.username === username);
+            if (userExists) {
+                alert('用户名已存在，请直接登录');
+                return;
+            }
+            users.push({
+                username: username,
+                password: password,
+                regTime: new Date().toLocaleString()
+            });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('注册成功！请登录');
+            regUsername.value = '';
+            regPassword.value = '';
+            regConfirm.value = '';
+            showLogin();
+        });
+        loginBtn.addEventListener('click', function() {
+            const username = loginUsername.value.trim();
+            const password = loginPassword.value.trim();
+            
+            if (!username || !password) {
+                alert('请输入用户名和密码');
+                return;
+            }
+            let users = JSON.parse(localStorage.getItem('users'));
+            const validUser = users.find(user => user.username === username && user.password === password);
+            
+            if (validUser) {
+                localStorage.setItem('currentUser', username);
+                loginBox.style.display = 'none';
+                registerBox.style.display = 'none';
+                loginUsername.value = '';
+                loginPassword.value = '';
+            } else {
+                alert('用户名或密码错误，请先注册');
+            }
+        });
+</script>
+</body>
+</html>
