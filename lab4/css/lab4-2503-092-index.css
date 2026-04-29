@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f0f4;
+}
+
+#content {
+    height: 2000px;
+}
+
+.clear {
+    height: 145px;
+}
+
+.header {
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    z-index: 999;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.site-name {
+    font-size: 25px;
+    font-weight: 750;
+    color: burlywood;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    height: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid red;
+    background-color: white;
+}
+.search-input {
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 15px;
+}
+.search-btn {
+    width: 75px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.search-btn img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    transition: all 1s;
+}
+.search-btn:hover img{
+    transform: rotate(360deg);
+}
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+    margin-right: 80px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 17px;
+    color: red;
+}
+/* 登陆注册界面 */
+#login, #register {
+    width: 425px;
+    height: auto;
+    min-height: 525px;
+    background-color: white;
+    border: 2px solid beige;
+    position: fixed;
+    border-radius: 20px;
+    top: 150px;
+    left: 600px;
+    z-index: 9999;
+    padding-bottom: 20px;
+    display: none; 
+}
+.hr{
+    height: 0;
+    margin-top: 10px;
+    border: 1px solid burlywood;
+}
+.touxiang{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin:15px auto;
+    background-color: beige;
+}
+.touxiang img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 30px;
+}
+#login .text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#register .text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.text input{
+    width: 325px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 10px;
+    padding-left: 10px; ;
+    background-color: #f5f5f5;
+    border: 2px solid rgb(87, 84, 84);
+    outline: none;
+}
+.sm{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 5px;
+}
+.sm a{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn button{
+    width: 325px;
+    height: 65px;
+    border: 0;
+    border-radius: 10px;
+    background-color:skyblue;
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+}
+.btn button:hover{
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        rgb(224, 173, 173),
+        rgb(49, 49, 76)
+    );
+    transform: scale(0.9);
+}
+.register{
+    margin-top: 15px;
+}
+.register ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.register ul li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.box { display: none; }
+.box.show { display: block !important; }
+/* end */
+.center {
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+.left {
+    width: 300px;
+    height: 570px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    padding: 0 5px;
+}
+.left li {
+    width: 290px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: burlywood;
+    list-style: none;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(72, 48, 96);
+    cursor: pointer;
+}
+
+.left li:hover {
+    background-color: beige;
+}
+.main {
+    width: 720px;
+    height: 570px;
+    background-color: beige;
+    border-radius: 15px;
+    overflow: hidden; 
+}
+.cartoon{
+    width: 720px;
+    height: 570px;
+    overflow: hidden;
+}
+.picture{
+    width: 720px;
+    height: 2850px;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+}
+.picture > li{
+    position: relative;
+    animation: tushu 25s ease 5s infinite alternate;
+    -webkit-animation: tushu 25s ease 5s infinite alternate;
+}
+@keyframes tushu {
+    0%{top: 0}
+    20%{top: -570px}
+    40%{top: -1140px}
+    60%{top: -1710px}
+    80%{top: -2280px}
+    100%{top: -2850px}
+}
+@-webkit-keyframes tushu {
+    0%{top: 0}
+    20%{top: -570px}
+    40%{top: -1140px}
+    60%{top: -1710px}
+    80%{top: -2280px}
+    100%{top: -2850px}
+}
+.main img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.main img:hover {
+    cursor: pointer;
+}
+.right {
+    width: 350px;
+    height: 570px;
+    border-radius: 15px;
+    padding-left: 8px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.re {
+    width: 328px;
+    height: 180px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(164, 164, 239), rgb(207, 64, 207));
+    padding: 45px 20px;
+    font-size: 20px;
+    color: white;
+}
+.zri {
+    position: fixed;
+    top: 180px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.zri img{
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+}
+.zri .car:hover img{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.sale {
+    width: 140px;
+    height: 75px;
+    background: linear-gradient(to bottom, rgb(127, 127, 232), rgb(228, 93, 93));
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sale a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 75px;
+    color: white;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    padding: 0 8px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.remen {
+    width: 1400px;
+    height: 400px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.remen h1 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.book-list {
+    display: flex;
+    gap: 50px;
+    padding: 25px 0;
+}
+.img {
+    width: 200px;
+    height: 280px;
+    position: relative;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+.mame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 280px;
+    opacity: 0;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+.img:hover .mame {
+    opacity: 1;
+}
+.img:hover img {
+    opacity: 0.3;
+    cursor: pointer;
+    transform: scale(1.1) translateX(20px);
+}
+.newbook {
+    width: 1400px;
+    height: 800px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+.newbook h1 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(177, 67, 67);
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+table img {
+    width: 150px;
+    height: 210px;
+}
+
+th {
+    color: rgb(201, 71, 71);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+td {
+    height: 230px;
+    text-align: center;
+    border: 3px solid rgb(127, 42, 42);
+    color: burlywood;
+    font-size: 30px;
+    font-weight: 700;
+}
